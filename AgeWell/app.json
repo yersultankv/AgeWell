@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "AgeWell",
+    "slug": "agewell",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "kz.agewell.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "AgeWell қосымшасына Face ID арқылы кіру үшін қажет.",
+        "NSCameraUsageDescription": "Тамақ суретін талдау үшін камера қажет.",
+        "NSPhotoLibraryUsageDescription": "Профиль және тамақ суретін таңдау үшін галерея қажет."
+      }
+    },
+    "android": { "package": "kz.agewell.app" },
+    "plugins": [
+      ["expo-local-authentication", { "faceIDPermission": "AgeWell қосымшасына Face ID арқылы кіру үшін қажет." }],
+      "expo-secure-store",
+      ["expo-image-picker", { "photosPermission": "Профиль және тамақ суретін таңдау үшін галерея қажет.", "cameraPermission": "Тамақ суретін талдау үшін камера қажет." }],
+      "expo-notifications"
+    ]
+  }
+}
